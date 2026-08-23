@@ -16,7 +16,7 @@ type KeychainStore struct {
 }
 
 func DefaultKeychainStore() KeychainStore {
-	return KeychainStore{Service: "ahp-core", Account: defaultKeyName}
+	return KeychainStore{Service: "agent-handoff-core", Account: defaultKeyName}
 }
 
 func (s KeychainStore) Load(name string) (Identity, error) {
@@ -56,7 +56,7 @@ func (s KeychainStore) service() string {
 	if s.Service != "" {
 		return s.Service
 	}
-	return "ahp-core"
+	return "agent-handoff-core"
 }
 
 func (s KeychainStore) account(name string) string {

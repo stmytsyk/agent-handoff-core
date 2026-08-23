@@ -12,10 +12,10 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/agent-handoff-protocol/ahp-core/pkg/contacts"
-	ahpcrypto "github.com/agent-handoff-protocol/ahp-core/pkg/crypto"
-	"github.com/agent-handoff-protocol/ahp-core/pkg/payload"
-	"github.com/agent-handoff-protocol/ahp-core/pkg/transport"
+	"github.com/stmytsyk/agent-handoff-core/pkg/contacts"
+	ahpcrypto "github.com/stmytsyk/agent-handoff-core/pkg/crypto"
+	"github.com/stmytsyk/agent-handoff-core/pkg/payload"
+	"github.com/stmytsyk/agent-handoff-core/pkg/transport"
 )
 
 const socketPath = "/tmp/ahp.sock"

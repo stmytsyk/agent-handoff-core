@@ -6,10 +6,10 @@ import (
 	"encoding/json"
 	"testing"
 
-	ahpcrypto "github.com/agent-handoff-protocol/ahp-core/pkg/crypto"
-	"github.com/agent-handoff-protocol/ahp-core/pkg/payload"
-	"github.com/agent-handoff-protocol/ahp-core/pkg/redaction"
-	"github.com/agent-handoff-protocol/ahp-core/pkg/transport"
+	ahpcrypto "github.com/stmytsyk/agent-handoff-core/pkg/crypto"
+	"github.com/stmytsyk/agent-handoff-core/pkg/payload"
+	"github.com/stmytsyk/agent-handoff-core/pkg/redaction"
+	"github.com/stmytsyk/agent-handoff-core/pkg/transport"
 )
 
 func TestP2PHandoffSanitizesAndTransfers(t *testing.T) {

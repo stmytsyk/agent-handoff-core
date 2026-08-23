@@ -5,7 +5,7 @@ import (
 	"encoding/json"
 	"net/http"
 
-	"github.com/agent-handoff-protocol/ahp-core/pkg/payload"
+	"github.com/stmytsyk/agent-handoff-core/pkg/payload"
 )
 
 type Server struct {

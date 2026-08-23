@@ -3,7 +3,7 @@ package contacts
 import (
 	"testing"
 
-	ahpcrypto "github.com/agent-handoff-protocol/ahp-core/pkg/crypto"
+	ahpcrypto "github.com/stmytsyk/agent-handoff-core/pkg/crypto"
 )
 
 func TestBookInitContactStringAndAdd(t *testing.T) {

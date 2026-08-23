@@ -5,7 +5,7 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/agent-handoff-protocol/ahp-core/pkg/transport"
+	"github.com/stmytsyk/agent-handoff-core/pkg/transport"
 )
 
 func main() {

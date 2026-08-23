@@ -7,7 +7,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/agent-handoff-protocol/ahp-core/pkg/redaction"
+	"github.com/stmytsyk/agent-handoff-core/pkg/redaction"
 )
 
 type Manifest struct {

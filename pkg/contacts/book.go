@@ -11,7 +11,7 @@ import (
 	"strings"
 	"time"
 
-	ahpcrypto "github.com/agent-handoff-protocol/ahp-core/pkg/crypto"
+	ahpcrypto "github.com/stmytsyk/agent-handoff-core/pkg/crypto"
 )
 
 type LocalProfile struct {

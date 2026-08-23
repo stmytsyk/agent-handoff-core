@@ -1,6 +1,6 @@
-# AHP Core
+# Agent Handoff Core
 
-AHP Core is a terminal-native agent handoff daemon and MCP-compatible context transport.
+Agent Handoff Core is a terminal-native agent handoff daemon and MCP-compatible context transport.
 
 This repository contains the first implementation slice:
 

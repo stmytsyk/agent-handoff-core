@@ -1,4 +1,4 @@
-module github.com/agent-handoff-protocol/ahp-core
+module github.com/stmytsyk/agent-handoff-core
 
 go 1.24.0
 
