@@ -9,9 +9,8 @@ When the user asks to hand off work, share context, or transfer a task to a coll
 
 1. Execute `git diff HEAD` and `git status --porcelain` to capture active branch changes.
 2. Summarize key architecture choices made during this session into a 3-bullet point summary.
-3. Call the AHP CLI helper script to strip secrets and stream the payload:
+3. Call the Go CLI to strip secrets and stream the payload:
    ```bash
-   python3 ${CLAUDE_PLUGIN_ROOT}/skills/share-handoff/scripts/export.py --target "$1"
+   ahp-cli share "$1"
    ```
 4. Confirm to the user once the P2P WebRTC connection delivers the payload.
-
