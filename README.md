@@ -1,5 +1,9 @@
 # Agent Handoff Core
 
+[![CI](https://github.com/stmytsyk/agent-handoff-core/actions/workflows/ci.yml/badge.svg)](https://github.com/stmytsyk/agent-handoff-core/actions/workflows/ci.yml)
+[![CodeQL](https://github.com/stmytsyk/agent-handoff-core/actions/workflows/codeql.yml/badge.svg)](https://github.com/stmytsyk/agent-handoff-core/actions/workflows/codeql.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+
 Agent Handoff Core is an experimental local daemon and CLI for handing off coding-agent context between developers.
 
 It packages the current Git work state, removes likely secrets, compresses the result, and sends it to a trusted peer over an encrypted peer-to-peer WebRTC DataChannel.
@@ -272,7 +276,9 @@ tests/        end-to-end tests
 
 Agent Handoff Core is licensed under the MIT License. See [LICENSE](LICENSE).
 
-This project has third-party dependencies with their own licenses. Direct dependencies currently include:
+This project has third-party dependencies with their own licenses. See [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
+
+Direct dependencies currently include:
 
 | Dependency | Purpose | License |
 | --- | --- | --- |
@@ -289,6 +295,12 @@ License references:
 - Google UUID uses a BSD-style license.
 
 This README is not legal advice. Review dependency licenses before redistributing binaries or embedding this code in a commercial product.
+
+## Contributing
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for development setup and pull request expectations.
+
+Please also read [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md). For vulnerabilities, follow [SECURITY.md](SECURITY.md).
 
 ## Security
 
