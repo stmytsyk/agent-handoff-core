@@ -1,9 +1,5 @@
 # Agent Handoff Core
 
-[![CI](https://github.com/stmytsyk/agent-handoff-core/actions/workflows/ci.yml/badge.svg)](https://github.com/stmytsyk/agent-handoff-core/actions/workflows/ci.yml)
-[![CodeQL](https://github.com/stmytsyk/agent-handoff-core/actions/workflows/codeql.yml/badge.svg)](https://github.com/stmytsyk/agent-handoff-core/actions/workflows/codeql.yml)
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-
 Agent Handoff Core is an experimental local daemon and CLI for handing off coding-agent context between developers.
 
 It packages the current Git work state, removes likely secrets, compresses the result, and sends it to a trusted peer over an encrypted peer-to-peer WebRTC DataChannel.
@@ -100,7 +96,7 @@ Redaction is a safety layer, not a guarantee. Review what you share before using
 
 ## Requirements
 
-- Go 1.24+
+- Go 1.25.13 or newer
 - Git
 - macOS/Linux shell environment
 - network access between peers and relay for real handoffs
@@ -119,6 +115,12 @@ Build the commands:
 
 ```bash
 GOCACHE=/tmp/ahp-go-build go build ./cmd/ahpd ./cmd/ahp-cli ./cmd/ahp-relay
+```
+
+Run the full local quality gate:
+
+```bash
+make check
 ```
 
 ## Local Packaging Test
@@ -243,6 +245,12 @@ Run default tests:
 
 ```bash
 GOCACHE=/tmp/ahp-go-build go test ./...
+```
+
+Run all standard quality checks:
+
+```bash
+make check
 ```
 
 Run WebRTC integration tests explicitly:

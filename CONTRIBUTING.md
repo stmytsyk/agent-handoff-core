@@ -11,6 +11,12 @@ go test ./...
 go build ./cmd/ahpd ./cmd/ahp-cli ./cmd/ahp-relay
 ```
 
+Or run the full local quality gate:
+
+```bash
+make check
+```
+
 Run WebRTC integration tests explicitly:
 
 ```bash
@@ -22,8 +28,7 @@ AHP_WEBRTC_TEST=1 go test ./cmd/ahpd ./pkg/transport -run 'TestSendReceiveEnvelo
 - Keep changes focused.
 - Add or update tests for behavioral changes.
 - Run `gofmt`.
-- Run `go test ./...`.
-- Run `go build ./cmd/ahpd ./cmd/ahp-cli ./cmd/ahp-relay`.
+- Run `make check`.
 - Update README, SECURITY.md, or THIRD_PARTY_NOTICES.md when trust boundaries, setup, or dependencies change.
 
 ## Design Priorities
