@@ -3,7 +3,7 @@ module github.com/stmytsyk/agent-handoff-core
 go 1.25.13
 
 require (
-	github.com/klauspost/compress v1.19.2
+	github.com/klauspost/compress v1.20.0
 	github.com/pion/ice/v4 v4.4.0
 	github.com/pion/webrtc/v4 v4.2.18
 )
